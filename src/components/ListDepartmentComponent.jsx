@@ -6,7 +6,9 @@ import useAxiosPrivate from "src/hooks/useAxiosPrivate";
 const ListDepartmentComponent = () => {
   const [departments, setDepartments] = useState([]);
   const [errMsg, setErrMsg] = useState("");
+
   const axiosPrivate = useAxiosPrivate();
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -49,7 +51,6 @@ const ListDepartmentComponent = () => {
         }
         //navigate("/login", { state: { from: location }, replace: true });
       }
-      return;
     }
   };
 
